@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  color: white;
+}
+body {
+  background-color: rebeccapurple;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+input,
+button,
+submit {
+  border: none;
+}
+.parent {
+  position: relative;
+  height: 100vmin;
+}
+.child {
+  background-color: bisque;
+  font-size: 40px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  padding: 40px;
+  border-radius: 2px;
+  color: brown;
+  position: absolute;
+  top: 50;
+  left: 50;
+  transform: translate(-50%, -50%);
+}
