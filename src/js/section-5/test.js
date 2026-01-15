@@ -1,5 +1,8 @@
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////[Section 4 Javascript DOM Manipulation and events.]/////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
 console.log(
-  "\n\n\n\n\n \t\t\t\t\tSection 4 Javascript DOM Manipulation and events."
+  "\n\n\n\n\n \t\t\t\t\tSection 4 Javascript DOM Manipulation and events.",
 );
 console.log("\n\n\n\n\n\t\t\t\ttest");
 
@@ -38,39 +41,95 @@ const str2 = country.includes("ndia");
 const str3 = myCaptial.includes("i");
 
 console.log(str1, str2, str3);
-
+/////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////[Testing variables related to let, const and var]/////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
 console.log(
-  "\n\n\n\n\n \t\t\t\t\tTesting variables related to let, const and var"
+  "\n\n\n\n\n \t\t\t\t\tTesting variables related to let, const and var in respective to functional scoped vs block scoped",
 );
-// let n = 20,
-//   n1 = 1;
-// var n2 = 2;
-// const n3 = 3;
-// console.log(n);
+let n = 20,
+  n1 = 1;
+var n2 = 2;
+const n3 = 3;
+console.log(
+  "Output value before any execution N : ",
+  n,
+  " N1 : ",
+  n1,
+  " N2 : ",
+  n2,
+  " N3 : ",
+  n3,
+);
 
-//     // let n;  //redeclaration of n not allowed like const.
-//     // n=40;
-// function showlet() {
-//     let n;  //Redeclare n using let instialise new scope inside function.
-//     n=40;
-//     console.log(n); 
-//     const n3 = 50;
-//     console.log(n3);
+// let n;  //redeclaration of n not allowed like const.
+// n=40;
+function showlet() {
+  var n; //Redeclare n using var instialise new scope inside function.
+  n = 40; // redeclaration of value of n
+  let n1 = 11; //Redeclare n using let instialise new scope inside function.
+  const n2 = 54; //Redeclare n using const instialise new scope inside function.
+  const n3 = 50; //Redeclare n3 using const instialise new scope inside function.
+  console.log(
+    "Output value Inside function N : ",
+    n,
+    " N1 : ",
+    n1,
+    " N2 : ",
+    n2,
+    " N3 : ",
+    n3,
+  );
+}
+
+showlet();
+console.log(
+  "Output value after function execution N : ",
+  n,
+  " N1 : ",
+  n1,
+  " N2 : ",
+  n2,
+  " N3 : ",
+  n3,
+);
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////[Checking value with if statement and after statement]//////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// var al = 10;
+// if(true){
+//     var al = 20;
+//     console.log("Output from Inside if statement "+al);
 // }
 
-// showlet();
-// console.log(n);
-// console.log(n1, n2, n3);
+// console.log("Output from Outside if statement "+al);
 
+let al = 10;
+if(true){
+    // const al = 20;
+    let al = 20; // let and const inside locked scope act as new variable
+    // but not var
+    console.log("Output from Inside if-statement "+al);
+}
 
-// let al = 10;
+console.log("Output from Outside if-statemeent "+al);
+
+// const al = 10;
 // if(true){
-//     let al = 20;
+//     let al = 20;// let and const inside a
+//      // blocked scope act as new variable
+//      // but not var
+//     // const al = 20;
 //     console.log("Output from Inside function "+al);
 // }
 
 // console.log("Output from Outside function "+al);
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////[Overwriting variable using let and var]////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 // let cum = 2;
 // // let cum = 4;
@@ -78,3 +137,71 @@ console.log(
 // var cumming = 5;
 // console.log(cum,cumming);
 
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////[making object with Constuctor fuunctions]//////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// function TestConstruct(test1, test2, test3){
+//     this.test1 = test1;
+//     this.test2 = test2;
+//     this.test3 = test3;
+// }
+
+// const TestConstruct = function(test1, test2, test3){
+// }
+// class TestConstruct{
+//     constructor(test1, test2, test3){
+
+//     this.test1 = test1;
+//     this.test2 = test2;
+//     this.test3 = test3;
+//     }
+//     callmebae(){
+//         return `this is a test 1 : ${this.test1}`;
+//     }
+// }
+// const result1 = new TestConstruct('test1', 'test2', 'test3');
+
+// console.log(result1.callmebae());
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////[Checking Output with timeout function ]////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+// for(let i=0;i<5;i++){
+//     setTimeout(function(){
+//         console.log(i);
+//     },i*1000);
+// }
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+//[Checking whether how hoisting affect behaviour of variable passed as value in function & 
+//as reference]////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+console.log(
+  "\n\n\n\n\n \t\t\t\t\tChecking whether how hoisting affect behaviour of variable passed as value in function & " +
+    "as reference",
+);
+function change() {
+  //  change(); and change(obj) both work in this function
+  obj.username = "dipanshu";
+  fullname = "deepanshushora";
+  console.log("Without parameter function");
+}
+
+// function change(obj) {
+//   //  change(); this will work in this function because the parameter expects obj and it also uses inside it.
+//   obj.username = "dipanshu";
+//   fullname = "deepanshushora";
+//  console.log('With parameter function');
+// }
+
+let obj = { username: "deepanshu", lastname: "shora" };
+var fullname = "mr.shora";
+
+//why this works simple because the obj and fullname are exists before the calling of change function
+// change(obj); 
+// use change(obj) or change() will change the object parameter
+change();
+
+console.log(obj);
+console.log(fullname);

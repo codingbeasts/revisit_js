@@ -12,6 +12,9 @@ class Vehicle {
     this.modelYear = modelYear;
     this.currentYear = new Date().getFullYear();
   }
+    test(){
+        return 'Simple Test';
+    }
 }
 
 const car = new Vehicle("Car", 4, ["Petrol", "Diesel"], 2014);
@@ -20,6 +23,10 @@ const truck = new Vehicle('Truck',6,'Diesel',2020);
 
 console.log(car);
 console.log(bike);
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////[Adding prototype with Vehicle class]/////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
 
 Vehicle.prototype.age = function () {
   return this.currentYear - this.modelYear >= 15
@@ -36,3 +43,6 @@ console.log("car instance of Vehicle : "+`${car instanceof Vehicle}`);
 console.log("bike instance of Vehicle : "+`${bike instanceof Vehicle}`);
 console.log("truck instance of Vehicle : "+`${truck instanceof Vehicle}`);
 console.log(Person);
+
+
+console.log(car.test());

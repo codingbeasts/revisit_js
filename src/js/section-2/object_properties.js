@@ -1,5 +1,5 @@
 console.log("\n\n\n\n\t\t\t\tObject and Properties");
-// creating object and properties using Object Intialiser
+// creating object and properties using Object Initialiser or Object literal
 const jatin = {
   firstName: "Jatin",
   lastName: "Ahuja",
@@ -32,7 +32,7 @@ console.log(`Job : ${jatin.job}`);
 console.log(jatin);
 
 // create object using new Object() function
-var dipanshu = new Object();
+const dipanshu = new Object();
 dipanshu.firstName = "Dipanshu";
 dipanshu.lastName = "Shora";
 dipanshu.birthyear = 1997;
@@ -70,11 +70,10 @@ console.log('\n\nObject from Function Constructor : ',lakshay);
 // create object using create method
 //
 const sagar = Object.create(lakshay, {
-  firstName: { value: "Sagar" },
-  lastName: { value: "Vinayak" },
-  birthyear: { value: 1992 },
 });
-console.log('\n\nObject from object.Create method : ',sagar);
+sagar.firstName =  "Sagar";
+ sagar.birthyear = 1992;
+console.log('\n\nObject from object.Create method will not create any shallow copy or deep copy: ',sagar);
 
 // create object using a shallow copy of an object using assign keyword
 
@@ -82,3 +81,7 @@ const lassay = Object.assign({}, lakshay);
 lassay.firstName = 'lassy';
 lassay.lastName = 'shora';
 console.log('\n\nObject from Object.assign : ',lassay);
+
+Details.prototype.retireAge = function(cy){
+    return cy - this.birthyear;
+}

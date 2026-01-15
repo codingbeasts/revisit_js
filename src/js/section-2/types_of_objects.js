@@ -38,13 +38,10 @@ const objShallow = Object.assign({}, objAssignInside);
 
 console.log("Object Assign with properties defined using another object ",objShallow);
 
-console.log('\t\t\n\nCreating Object using : Objet.create method');
-const objCreate = Object.create({},{
-    name : {value: "dipanshu"}
-});
-
-
-console.log("Object Create with properties inside : ",objCreate);
+console.log('\t\t\n\nCreating Object using : Objet.create method');// this will not create shallow copy or deep copy
+const objCreate = Object.create(objAssignInside);
+objCreate.name = 'Dipanshu Shora';
+console.log("Object Create using objAssignInside : ",objCreate,objAssignInside);
 
 
 
@@ -59,3 +56,9 @@ function personDetail(name,age){
 const dipanshuDetails = personDetail('dipanshu shora', 28);
 const jatinDetails = personDetail('jatin ahuja', 28);
 console.log(dipanshuDetails,jatinDetails);
+
+
+
+const original = { name: "Dipanshu", age: 27 };
+const obj = JSON.parse(JSON.stringify(original));
+

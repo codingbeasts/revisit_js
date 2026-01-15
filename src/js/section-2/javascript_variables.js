@@ -57,7 +57,7 @@ switch(true){
 
 var job;
 
-
+job = 'programmer';
 
 
 console.log('type of fullage : ' + typeof(fullAge));
