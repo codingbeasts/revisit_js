@@ -107,14 +107,14 @@ console.log(
 // console.log("Output from Outside if statement "+al);
 
 let al = 10;
-if(true){
-    // const al = 20;
-    let al = 20; // let and const inside locked scope act as new variable
-    // but not var
-    console.log("Output from Inside if-statement "+al);
+if (true) {
+  // const al = 20;
+  let al = 20; // let and const inside locked scope act as new variable
+  // but not var
+  console.log("Output from Inside if-statement " + al);
 }
 
-console.log("Output from Outside if-statemeent "+al);
+console.log("Output from Outside if-statemeent " + al);
 
 // const al = 10;
 // if(true){
@@ -174,7 +174,7 @@ console.log("Output from Outside if-statemeent "+al);
 // }
 
 /////////////////////////////////////////////////////////////////////////////////////////////
-//[Checking whether how hoisting affect behaviour of variable passed as value in function & 
+//[Checking whether how hoisting affect behaviour of variable passed as value in function &
 //as reference]////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
 console.log(
@@ -199,9 +199,42 @@ let obj = { username: "deepanshu", lastname: "shora" };
 var fullname = "mr.shora";
 
 //why this works simple because the obj and fullname are exists before the calling of change function
-// change(obj); 
+// change(obj);
 // use change(obj) or change() will change the object parameter
 change();
 
 console.log(obj);
 console.log(fullname);
+
+// the hoisting and lexical scoping
+
+console.log("\n\n\n\n\n ");
+
+function aFun() {
+  // console.log("The value of b : " + b);
+  return "The value of b : " + b;
+}
+
+var b = 20;
+console.log(aFun());
+
+// checking undefined vs not defined
+let apple;
+// if removed the declaration the console statement says not defined reference error
+// but with declaration it say undefined if not initialised
+
+// console.log(apple);
+//block and shadowing.
+
+var australia = "australia ";
+
+function printBlockScope() {
+  var australia = "United Kingdom slave country";
+  const bharat = "india";
+  let canada = "canada";
+  console.log(australia, ", ", bharat, ", ", canada);
+}
+printBlockScope();
+console.log(australia); // blocked scoped of function doesn't affect var outside of function
+console.log(australia, ", ", bharat, ", ", canada); // does affect blocked-scoped if not part of function scope
+//and let and const stays unaffected even in block-scoped or function-scoped
