@@ -167,12 +167,20 @@ console.log("Output from Outside if-statemeent " + al);
 /////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////[Checking Output with timeout function ]////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////
-// for(let i=0;i<5;i++){
-//     setTimeout(function(){
-//         console.log(i);
-//     },i*1000);
-// }
+console.log("\n\n\n\n\n \t\t\t\t\tsetTimout Closure Example");
+function callsetTO() {
+  // if we don't want to use let then create a new function and simply pass it inside the for loop
+  for (var i = 0; i < 5; i++) {
+    newST(i);
+  }
+}
+function newST(num) {
+  setTimeout(function () {
+    console.log(num + 1);
+  }, num * 1000);
+}
 
+callsetTO();
 /////////////////////////////////////////////////////////////////////////////////////////////
 //[Checking whether how hoisting affect behaviour of variable passed as value in function &
 //as reference]////////////////////////
@@ -236,5 +244,5 @@ function printBlockScope() {
 }
 printBlockScope();
 console.log(australia); // blocked scoped of function doesn't affect var outside of function
-console.log(australia, ", ", bharat, ", ", canada); // does affect blocked-scoped if not part of function scope
+// console.log(australia, ", ", bharat, ", ", canada); // does affect blocked-scoped if not part of function scope
 //and let and const stays unaffected even in block-scoped or function-scoped
