@@ -246,4 +246,5 @@ printBlockScope();
 console.log(australia); // blocked scoped of function doesn't affect var outside of function
 // console.log(australia, ", ", bharat, ", ", canada); // does affect blocked-scoped if not part of function scope
 //and let and const stays unaffected even in block-scoped or function-scoped
-
+//
+//
