@@ -10,19 +10,19 @@ const jatin = {
 };
 console.log(jatin.firstName);
 
-// const jatin_1 = jatin;
-// jatin_1.firstName = "pakro";
-// console.log(jatin_1);
-// console.log(jatin);
+/* const jatin_1 = jatin;
+ jatin_1.firstName = "pakro";
+ console.log(jatin_1);
+ console.log(jatin);
 
-// let test = "test";
-// function testing() {
-//   test = "test in a function";
-// }
+ let test = "test";
+ function testing() {
+   test = "test in a function";
+ }
 
-// testing();
+ testing();
 
-// console.log(test);
+ console.log(test);*/
 
 console.log(`Name : ${jatin.firstName}`);
 (function () {
@@ -68,7 +68,7 @@ const lakshay = new Details(
 console.log('\n\nObject from Function Constructor : ',lakshay);
 
 // create object using create method
-//
+
 const sagar = Object.create(lakshay, {
 });
 sagar.firstName =  "Sagar";

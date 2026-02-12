@@ -24,9 +24,7 @@ const truck = new Vehicle('Truck',6,'Diesel',2020);
 console.log(car);
 console.log(bike);
 
-/////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////[Adding prototype with Vehicle class]/////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////
+/*[Adding prototype with Vehicle class]*/
 
 Vehicle.prototype.age = function () {
   return this.currentYear - this.modelYear >= 15
@@ -46,3 +44,28 @@ console.log(Person);
 
 
 console.log(car.test());
+
+/*[making object with Constuctor fuunctions]*/
+
+/* function TestConstruct(test1, test2, test3){
+     this.test1 = test1;
+     this.test2 = test2;
+     this.test3 = test3;
+}*/
+
+// const TestConstruct = function(test1, test2, test3){}
+
+/* class TestConstruct{
+     constructor(test1, test2, test3){
+
+     this.test1 = test1;
+     this.test2 = test2;
+     this.test3 = test3;
+     }
+     callmebae(){
+         return `this is a test 1 : ${this.test1}`;
+     }
+}*/
+
+// const result1 = new TestConstruct('test1', 'test2', 'test3');
+// console.log(result1.callmebae());

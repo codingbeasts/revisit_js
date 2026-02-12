@@ -1,7 +1,6 @@
 console.log("\n\n\n\n\t\t\t\t\t Functons Expressions");
 
 // function expression
-//
 var occupation = function (firstName, occupt) {
   switch (occupt) {
     case "teacher":
