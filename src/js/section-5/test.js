@@ -106,8 +106,9 @@ console.log(
 var al = 10;
 if (true) {
   var al = 20;
-  // let al = 20; // let and const inside locked scope act as new variable
-  // but not var
+  /* let al = 20; // let and const inside locked scope act as new variable
+  but not var
+  that's why we use this let and const in loops and first class functions */
   console.log("Output from Inside if-statement " + al);
 }
 
@@ -125,15 +126,15 @@ console.log("\bvar doesn't respect block scoped\b");
 
 // console.log("Output from Outside function "+al);
 
+
+
 /*[Overwriting variable using let and var]*/
 
-/* let cum = 2;
+ let cum = 2;
  // let cum = 4;
  var cumming = 4;
  var cumming = 5;
  console.log(cum,cumming);
-*/
-
 
 
 // checking undefined vs not defined
@@ -153,11 +154,10 @@ function printBlockScope() {
   console.log(australia, ", ", bharat, ", ", canada);
 }
 printBlockScope();
-console.log(australia); 
+console.log(australia);
 // blocked scoped of function doesn't affect var outside of function
 
-// console.log(australia, ", ", bharat, ", ", canada); 
+// console.log(australia, ", ", bharat, ", ", canada);
 
 /* does affect blocked-scoped if not part of function scope
 and let and const stays unaffected even in block-scoped or function-scoped.*/
-

@@ -15,22 +15,24 @@ function newST(num) {
 
 callsetTO();
 
-
-
-
 console.log("\n\n\n\n\n\t\t\t\tGarbage Collection in js");
 function gCollection() {
   var xmm = 0;
   return xmm;
 }
-console.log(gCollection());
+console.log("Garbage Collection Example : " + gCollection());
 
+let clickState;
+clickState = true;
 function outEvent() {
-  let i = 0;
-  return function () {
-    i > 5 ? i = null : ++i;
-    console.log("click : ", i);
-  };
+  if (clickState) {
+    let i = 0;
+    return function () {
+      i >= 5 ? (clickState = false) : ++i;
+      console.log("click : ", i);
+    };
+  }
 }
-document.getElementById("clickyyy").addEventListener("click", outEvent());
 
+// button in index.html is commmented
+// document.getElementById("clickyyy").addEventListener("click", outEvent());
