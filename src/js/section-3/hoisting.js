@@ -1,5 +1,5 @@
-console.log("\n\n\n\n\n \t\t\t\t\tSection 3 How Javascript works.");
-console.log("\n\n\n\n\t\t\t\tHoisting");
+console.info("\n\n\n\n\n \t\t\t\t\tSection 3 How Javascript works.");
+console.info("\n\n\n\n\t\t\t\tHoisting");
 
 calculateAge(1997); //normal function or function statement does support hoisting
 
@@ -16,7 +16,7 @@ retirement(1997);
 
 /*[Hoisting in let, const and var with TDZ]*/
 
-console.log("\n\n\n\n\t\t\t\tHoisting in let, const and var with TDZ");
+console.info("\n\n\n\n\t\t\t\tHoisting in let, const and var with TDZ");
 // console.log(myage);// undefined due to inaccessible before declaration.
 var myage = 2023 - 1997; // 26
 function callAgeBefore() {
@@ -35,7 +35,7 @@ console.log("function scoped - ", foo());
 console.log("global scoped - ", myage);
 
 /*[Checking whether how hoisting affect behaviour of variable passed as value in function & as reference]*/
-console.log(
+console.info(
   "\n\n\n\n\n \t\t\t\t\tChecking whether how hoisting affect behaviour of variable passed as value in function & " +
     "as reference",
 );

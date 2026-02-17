@@ -1,5 +1,4 @@
-console.log("");
-console.log("\n\n\n\n\t\t\t\tlogging from coding challenge 3");
+console.info("\n\n\n\n\t\t\t\tChallenge 3");
 
 /*
 

@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\t\t\t\tObject and Properties");
+console.info("\n\n\n\n\t\t\t\tObject and Properties");
 // creating object and properties using Object Initialiser or Object literal
 const jatin = {
   firstName: "Jatin",

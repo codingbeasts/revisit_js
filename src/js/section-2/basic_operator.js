@@ -1,4 +1,4 @@
-console.log("\n\n\n\n \t\t\t\t\tJavascript Basic Operators.");
+console.info("\n\n\n\n \t\t\t\t\tJavascript Basic Operators.");
 
 var year, yearDipanshu;
 
@@ -33,7 +33,7 @@ var whoIsOlder = ageDipanshu > ageJatin;
 x=null;
 console.log(whoIsOlder);
 
-console.log("\n\n\n\n\t\t\t\t\tUse of typeof function in js : ")
+console.info("\n\n\n\n\t\t\t\t\tUse of typeof function in js : ")
 console.log(typeof(ageDipanshu));
 
 console.log(typeof(isMarried));

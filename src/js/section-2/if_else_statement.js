@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\t\t\t\t\t If-else-If Statement");
+console.info("\n\n\n\n\t\t\t\t\t If-else-If Statement");
 
 var firstName = "Jatin";
 

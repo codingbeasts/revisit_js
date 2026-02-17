@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\t\t\t\t Challenge 5");
+console.info("\n\n\n\n\t\t\t\t Challenge 5");
 
 /*
  *  Remember the tip calculator challenge 3? Let's create a more advanced version using everything

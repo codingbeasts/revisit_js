@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\t\t\t\t\t Boolean Logic");
+console.info("\n\n\n\n\t\t\t\t\t Boolean Logic");
 
 var firstName = "Dipanshu";
 var age = 26;

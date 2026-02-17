@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\n\t\t\t\tPrimitivies objects");
+console.info("\n\n\n\n\n\t\t\t\tPrimitivies objects");
 
 var pr_age = 27;
 

@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\t\t\t\t\t Switch Statement");
+console.info("\n\n\n\n\t\t\t\t\t Switch Statement");
 
 // var job = prompt(
 //   "Enter your job positon from given below choice \n\t \

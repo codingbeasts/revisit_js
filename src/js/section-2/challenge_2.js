@@ -16,7 +16,7 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
     draw.
    */
 
-console.log("\n\n\n\n\t\t\t\t\t Challenge 2");
+console.info("\n\n\n\n\t\t\t\t\t Challenge 2");
 
 var average = function (item) {
   var sum = 0;
@@ -53,7 +53,7 @@ higher(average(johnTeam), average(mikeTeam)); //challenge 3
 maryTeam = [97, 134, 105];
 console.log("Mary Team's Average score : " + average(maryTeam));
 
-console.log("\n\n\n\nHigher of 3 teams");
+console.info("\n\n\n\nHigher of 3 teams");
 
 function higher1(team1, team2, team3) {
   if (team1 > team2 && team1 > team3 && team2 !== team3) {

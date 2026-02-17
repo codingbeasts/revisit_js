@@ -1,8 +1,8 @@
-console.log(
+console.info(
   "\n\n\n\n\n \t\t\t\t\tSection 5 Advance Javascript objects and functions."
 );
 
-console.log("\n\n\n\n\n\t\t\t\tConstructor using function");
+console.info("\n\n\n\n\n\t\t\t\tConstructor using function");
 
 class Vehicle {
   constructor(type, wheels, fuel, modelYear) {

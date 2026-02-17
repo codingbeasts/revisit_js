@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\t\t\t\tChallenge 4");
+console.info("\n\n\n\n\t\t\t\tChallenge 4");
 
 /*
  * Let's remember the firs coding challenge where Mark and John compared their BMIs. Let's now

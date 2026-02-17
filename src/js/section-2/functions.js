@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\t\t\t\t\t Functions");
+console.info("\n\n\n\n\t\t\t\t\t Functions");
 
 function calcAge(currentYear, birthYear) {
   return currentYear - birthYear;
@@ -32,41 +32,41 @@ console.log(retirement(2024, 1956, "Siddhant"));
 console.log(retirement(2024, 1997, "Jatin"));
 
 
-console.log("\n\n\n\n\t\t\t\t\t Types of Functions in functional programming.");
+console.info("\n\n\n\n\t\t\t\t\t Types of Functions in functional programming.");
 
 
 
-console.log("\n\n\t\tBasic function");
+console.info("\n\n\t\tBasic function");
 function hello(name){
     return `hi ${name}`;
 }
 console.log(hello('dipanshu'));
 
 
-console.log('\n\n\t\tFunction expression or Anonymous Function');
+console.info('\n\n\t\tFunction expression or Anonymous Function');
 const war = function(country_1,country_2){
     return `${country_1} is doing war with ${country_2}`;
 }
 console.log(war('Pakistan','India'));
 
-console.log('\n\n\t\tArrow Function');
+console.info('\n\n\t\tArrow Function');
 const water = (country)=>{
     return `${country} has stop it's water`;
 };
 
 console.log('India');
 
-console.log('\n\n\t\tIIFE - Immediately Invoked Function Expression');
+console.info('\n\n\t\tIIFE - Immediately Invoked Function Expression');
 (function(name){console.log('This is my surname '+name)})('Shora');
 
 
-console.log('\n\n\t\tPure Function');
+console.info('\n\n\t\tPure Function');
 function pureFun(year){
     return new Date().getFullYear() - year;
 }
 console.log('My Age is :',pureFun(1997));
 
-console.log('\t\t\t\t\t\tThis is generative function in js');
+console.info('\t\t\t\t\t\tThis is generative function in js');
 function* countToThree() {
   yield 1;
   yield 2;

@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\t\t\t\t Array");
+console.info("\n\n\n\n\t\t\t\t Array");
 
 var friendsName = ["jatin", "dipanshu", "siddhant"];
 

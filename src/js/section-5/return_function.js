@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\n\t\t\t\treturn function as function");
+console.info("\n\n\n\n\n\t\t\t\treturn function as function");
 function interView(job){
     switch(job){
         case 'designer':return function(name){return `${name} given interview for ${job}`};

@@ -1,9 +1,9 @@
 /*[Section 4 Javascript DOM Manipulation and events.]*/
 
-console.log(
+console.info(
   "\n\n\n\n\n \t\t\t\t\tSection 4 Javascript DOM Manipulation and events.",
 );
-console.log("\n\n\n\n\n\t\t\t\ttest");
+console.info("\n\n\n\n\n\t\t\t\ttest");
 
 var country = ["India", "Germany", "Crotia", "Japan"];
 
@@ -43,7 +43,7 @@ console.log(str1, str2, str3);
 
 /*[Testing variables related to let, const and var]*/
 
-console.log(
+console.info(
   "\n\n\n\n\n \t\t\t\t\tTesting variables related to let, const and var in respective to functional scoped vs block scoped",
 );
 let n = 20,
@@ -113,7 +113,7 @@ if (true) {
 }
 
 console.log("Output from Outside if-statemeent " + al);
-console.log("\bvar doesn't respect block scoped\b");
+console.info("\bvar doesn't respect block scoped\b");
 
 /* const al = 10;
  if(true){
@@ -128,21 +128,6 @@ console.log("\bvar doesn't respect block scoped\b");
 
 
 
-/*[Overwriting variable using let and var]*/
-
- let cum = 2;
- // let cum = 4;
- var cumming = 4;
- var cumming = 5;
- console.log(cum,cumming);
-
-
-// checking undefined vs not defined
-let apple;
-// if removed the declaration the console statement says not defined reference error
-// but with declaration it say undefined if not initialised
-
-// console.log(apple);
 //block and shadowing.
 
 var australia = "australia ";
@@ -155,6 +140,7 @@ function printBlockScope() {
 }
 printBlockScope();
 console.log(australia);
+
 // blocked scoped of function doesn't affect var outside of function
 
 // console.log(australia, ", ", bharat, ", ", canada);

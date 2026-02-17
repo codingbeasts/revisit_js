@@ -1,8 +1,8 @@
-console.log("\n\n\n\n\t\t\t\tLoops and Iteration");
+console.info("\n\n\n\n\t\t\t\tLoops and Iteration");
 
 var i;
 for (i = 0; i < year.length; i++) {
-  console.log("printed using for loop "+year[i]);
+  console.log("printed using for loop " + year[i]);
 }
 
 i = 0;
@@ -13,28 +13,26 @@ while (i < year.length) {
 console.log("\n\n");
 i = 0;
 do {
-  console.log("printed using do while loop "+i);
-    i++;
+  console.log("printed using do while loop " + i);
+  i++;
 } while (i < 5);
 
 var randomArray = new Array("john", "mike", 1994, 2, true, 23.6, "smith");
 
 console.log("\n\nprint randomArray : " + randomArray);
-console.log("\n\n\nPrinting random array using forEach loop");
+console.info("\n\n\nPrinting random array using forEach loop");
 
 randomArray.forEach(function (el) {
-    console.log(el);
+  console.log(el);
 });
 
-        console.log("\n\n\n");
-for (i=0;i<randomArray.length;i++){
-    if(typeof(randomArray[i]) !== 'string')
-        continue;
-   console.log("example of using continue : "+randomArray[i]);
+console.log("\n\n\n");
+for (i = 0; i < randomArray.length; i++) {
+  if (typeof randomArray[i] !== "string") continue;
+  console.log("example of using continue : " + randomArray[i]);
 }
- console.log("\n\n\n\n");
-for (i=0;i<randomArray.length;i++){
-    if(typeof(randomArray[i]) !== 'string')
-        break;
-   console.log("example of using break : " +randomArray[i]);
+console.log("\n\n\n\n");
+for (i = 0; i < randomArray.length; i++) {
+  if (typeof randomArray[i] !== "string") break;
+  console.log("example of using break : " + randomArray[i]);
 }

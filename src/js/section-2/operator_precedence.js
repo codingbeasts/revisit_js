@@ -1,4 +1,4 @@
-console.log("\n\n\n\n \t\t\t\t\t Operator Precedence");
+console.info("\n\n\n\n \t\t\t\t\t Operator Precedence");
 
 var now = 2023;
 var yearDipanshu = 1997;

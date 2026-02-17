@@ -1,4 +1,4 @@
-console.log("\n\n\n\n\n\t\t\t\tobject using constructor");
+console.info("\n\n\n\n\n\t\t\t\tobject using constructor");
 /* const Person = function (name, year, job) {
    this.name = name;
    this.year = year;

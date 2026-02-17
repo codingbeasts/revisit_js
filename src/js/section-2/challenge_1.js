@@ -12,7 +12,7 @@
       "Is  Marks's BMI higher than John's? true").
 */
 
-console.log("\n\n\n\n\t\t\t\t\t Challenge 1");
+console.info("\n\n\n\n\t\t\t\t\t Challenge 1");
 
 let mark = {
   mass: 75,
