@@ -1,0 +1,104 @@
+1. Timer Functions
+
+    setTimeout(callback, delay): Executes a function after a specified delay.
+    setInterval(callback, interval): Repeatedly executes a function at specified intervals.
+    clearTimeout(timeoutId): Cancels a timeout set with setTimeout.
+    clearInterval(intervalId): Cancels an interval set with setInterval.
+
+2. Promise and Async Control
+
+    Promise: Represents a value that may be available now, or in the future, or never.
+    resolve(value): Resolves a promise with a given value.
+    reject(reason): Rejects a promise with a given reason.
+    async/await: Used to handle asynchronous operations in a more readable way.
+
+3. Storage APIs
+
+    localStorage: Allows storage of key-value pairs in a web browser with no expiration time.
+    sessionStorage: Similar to localStorage, but the data is available only for the duration of the page session.
+    IndexedDB: A low-level API for client-side storage of significant amounts of structured data, including files.
+    Cache API: Provides a way to store and retrieve network requests and responses for offline access.
+
+4. Fetch API
+
+    fetch(url): A modern way to make network requests, returning promises for the results of those requests.
+
+5. Event and Observer APIs
+
+    addEventListener(event, handler): Attaches an event handler to a specified event on an element.
+    removeEventListener(event, handler): Removes an event handler that was previously attached.
+    Intersection Observer: Monitors the visibility of elements within a specified region (viewport).
+    Performance Observer: Asynchronously observes performance-related metrics.
+
+6. Web Workers
+
+    Worker: Allows running scripts in background threads, enabling parallel processing without blocking the main thread.
+    postMessage(message): Sends messages to and from web workers.
+
+7. Geolocation API
+
+    navigator.geolocation.getCurrentPosition(success, error): Retrieves the user's current geographic location.
+    navigator.geolocation.watchPosition(success, error): Monitors the user's location as it changes.
+
+8. Web Sockets
+
+    WebSocket(url): Opens a persistent connection to a server using WebSockets for real-time data.
+    send(data): Sends data through the WebSocket connection.
+
+9. Media and Device APIs
+
+    MediaDevices.getUserMedia(constraints): Prompts the user for permission to access media devices (camera/microphone).
+    WebRTC: Real-time communication for audio and video.
+
+10. Other APIs
+
+    Clipboard API: Reads from and writes to the clipboard.
+    Notification API: Allows web pages to send notifications to the user.
+    Service Workers: Acts as a proxy between a web application and the network, enabling background tasks such as caching.
+
+11. WebAssembly
+
+    WebAssembly (Wasm): A low-level binary format that enables high-performance applications in web browsers, allowing languages like C, C++, and Rust to be compiled for the web.
+
+12. SVG and Canvas APIs
+
+    Canvas API: Allows for drawing graphics using JavaScript, enabling the creation of dynamic, visual content such as games and graphs.
+    SVG (Scalable Vector Graphics): A markup language for describing two-dimensional vector graphics. JavaScript can manipulate SVG elements directly.
+
+13. Accessibility APIs
+
+    ARIA (Accessible Rich Internet Applications): Attributes that enhance the accessibility of web content for users with disabilities.
+    Screen Reader APIs: Allow for the interaction with assistive technology to improve user experience for visually impaired users.
+
+14. Device Orientation and Motion APIs
+
+    DeviceOrientation API: Provides information about the physical orientation of a device.
+    DeviceMotion API: Gives acceleration and rotation data from the device’s sensors.
+
+15. Fetch and Response Streams
+
+    ReadableStream: Represents data that can be read from.
+    WritableStream: Represents data that can be written to.
+    Response.body: Returns a readable stream allowing progressive processing of data.
+
+16. Payment Request API
+
+    Payment Request: Provides a standardized way to initiate payments from within a web application, allowing users to pay with stored payment methods.
+
+17. Web Push Notifications
+
+    Push API: Allows servers to send messages and notifications to web applications even when the application is not open in the browser.
+
+18. History and Navigation APIs
+
+    History API: Allows manipulating the browser session history, enabling dynamic navigation in single-page applications (SPA).
+    Location API: Provides access to the current URL and methods for modifying it.
+
+19. Custom Elements and Shadow DOM
+
+    Web Components: A suite of technologies (including custom elements and shadow DOM) that allow for the creation of reusable custom HTML elements.
+
+20. Fetch API Enhancements
+
+    AbortController: Allows you to abort requests made with the Fetch API, improving control over network requests.
+
