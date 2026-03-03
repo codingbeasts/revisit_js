@@ -1,4 +1,4 @@
-console.info("\n\n\n\n\t\t\t\t\t Functons Expressions");
+printTitle("Functons Expressions");
 
 // function expression
 var occupation = function (firstName, occupt) {
@@ -14,9 +14,6 @@ var occupation = function (firstName, occupt) {
   }
 };
 
+console.log(occupation("Jatin", "berozgar"));
 
-console.log(occupation('Jatin','berozgar'));
-
-console.log(occupation('Dipanshu','programmer'));
-
-
+console.log(occupation("Dipanshu", "programmer"));

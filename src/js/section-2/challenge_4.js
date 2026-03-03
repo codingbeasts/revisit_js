@@ -1,4 +1,4 @@
-console.info("\n\n\n\n\t\t\t\tChallenge 4");
+printTitle("Challenge 4");
 
 /*
  * Let's remember the firs coding challenge where Mark and John compared their BMIs. Let's now
@@ -29,7 +29,6 @@ const johnP = new BMI_details("John", "Smith", 87, 1.68);
 // john.mass = 95;
 // john.height = 1.85;
 // mark.mass = 109;
-
 
 console.log(markP, johnP);
 console.log(markP.bmi());

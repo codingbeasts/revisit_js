@@ -1,5 +1,5 @@
-function greets(salutation){
-    console.log("hello ,"+ salutation);
+function greets(salutation) {
+  console.log("hello ," + salutation);
 }
 
 greets("dipanshu shora");

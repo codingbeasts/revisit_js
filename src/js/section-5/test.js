@@ -1,9 +1,7 @@
 /*[Section 4 Javascript DOM Manipulation and events.]*/
 
-console.info(
-  "\n\n\n\n\n \t\t\t\t\tSection 4 Javascript DOM Manipulation and events.",
-);
-console.info("\n\n\n\n\n\t\t\t\ttest");
+printTitle("Section 5 Advanced Javascript: Object & Functions");
+printHeading("test file");
 
 var country = ["India", "Germany", "Crotia", "Japan"];
 
@@ -43,8 +41,8 @@ console.log(str1, str2, str3);
 
 /*[Testing variables related to let, const and var]*/
 
-console.info(
-  "\n\n\n\n\n \t\t\t\t\tTesting variables related to let, const and var in respective to functional scoped vs block scoped",
+printHeading(
+  "Testing variables related to let, const and var in respective to functional scoped vs block scoped",
 );
 let n = 20,
   n1 = 1;
@@ -113,7 +111,7 @@ if (true) {
 }
 
 console.log("Output from Outside if-statemeent " + al);
-console.info("\bvar doesn't respect block scoped\b");
+printHeading("var doesn't respect block scoped");
 
 /* const al = 10;
  if(true){
@@ -125,8 +123,6 @@ console.info("\bvar doesn't respect block scoped\b");
  }*/
 
 // console.log("Output from Outside function "+al);
-
-
 
 //block and shadowing.
 

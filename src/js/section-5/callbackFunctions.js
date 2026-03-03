@@ -1,6 +1,6 @@
 /*[Checking Output with timeout function ]*/
-
-console.info("\n\n\n\n\n \t\t\t\t\tsetTimout Closure Example");
+printTitle("Callback functions in Js");
+printHeading("setTimout Closure Example");
 function callsetTO() {
   // if we don't want to use let then create a new function and simply pass it inside the for loop
   for (var i = 0; i < 5; i++) {
@@ -9,13 +9,13 @@ function callsetTO() {
 }
 function newST(num) {
   setTimeout(function () {
-    console.log('Nummm ',num + 1);
+    console.log("Nummm ", num + 1);
   }, num * 1000);
 }
 
 callsetTO();
 
-console.info("\n\n\n\n\n\t\t\t\tGarbage Collection in js");
+printHeading("Garbage Collection in js");
 function gCollection() {
   var xmm = 0;
   return xmm;

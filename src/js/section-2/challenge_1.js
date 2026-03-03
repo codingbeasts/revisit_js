@@ -12,7 +12,7 @@
       "Is  Marks's BMI higher than John's? true").
 */
 
-console.info("\n\n\n\n\t\t\t\t\t Challenge 1");
+printTitle("Challenge 1");
 
 let mark = {
   mass: 75,
@@ -23,7 +23,7 @@ let mark = {
 };
 
 function bmi(mass, height) {
-  return mass / Math.pow(height,2);
+  return mass / Math.pow(height, 2);
 }
 
 let john = Object.assign({}, mark); //create a shallow copy of mark
@@ -39,4 +39,3 @@ let higherBMI =
     : "John has a higher BMI than Mark";
 
 console.log(higherBMI);
-

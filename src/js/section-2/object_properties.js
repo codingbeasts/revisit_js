@@ -1,4 +1,4 @@
-console.info("\n\n\n\n\t\t\t\tObject and Properties");
+printTitle("Object and Properties");
 // creating object and properties using Object Initialiser or Object literal
 const jatin = {
   firstName: "Jatin",
@@ -29,7 +29,7 @@ console.log(`Name : ${jatin.firstName}`);
   jatin.job = "Majdoori";
 })(); //iife
 console.log(`Job : ${jatin.job}`);
-console.log(jatin);
+console.log("\n\n"+jatin);
 
 // create object using new Object() function
 const dipanshu = new Object();
@@ -37,7 +37,7 @@ dipanshu.firstName = "Dipanshu";
 dipanshu.lastName = "Shora";
 dipanshu.birthyear = 1997;
 
-console.log('\n\nObject from new Object method : ',dipanshu);
+console.log("\n\nObject from new Object method : ", dipanshu);
 
 // another way for creating object
 var siddhant = new Object({
@@ -45,7 +45,10 @@ var siddhant = new Object({
   lastName: (value = "Singh"),
   birthyear: (value = 1996),
 });
-console.log('\n\nObject from new Object method with properties inside : ',siddhant);
+console.log(
+  "\n\nObject from new Object method with properties inside : ",
+  siddhant,
+);
 
 // creating function using Constructor and new keyword
 function Details(fn, ln, by, fy, jo, im) {
@@ -63,25 +66,27 @@ const lakshay = new Details(
   1998,
   ["Mother", "Father", "Brother"],
   "Content Moderator",
-  true
+  true,
 );
-console.log('\n\nObject from Function Constructor : ',lakshay);
+console.log("\n\nObject from Function Constructor : ", lakshay);
 
 // create object using create method
 
-const sagar = Object.create(lakshay, {
-});
-sagar.firstName =  "Sagar";
- sagar.birthyear = 1992;
-console.log('\n\nObject from object.Create method will not create any shallow copy or deep copy: ',sagar);
+const sagar = Object.create(lakshay, {});
+sagar.firstName = "Sagar";
+sagar.birthyear = 1992;
+console.log(
+  "\n\nObject from object.Create method will not create any shallow copy or deep copy: ",
+  sagar,
+);
 
 // create object using a shallow copy of an object using assign keyword
 
 const lassay = Object.assign({}, lakshay);
-lassay.firstName = 'lassy';
-lassay.lastName = 'shora';
-console.log('\n\nObject from Object.assign : ',lassay);
+lassay.firstName = "lassy";
+lassay.lastName = "shora";
+console.log("\n\nObject from Object.assign : ", lassay);
 
-Details.prototype.retireAge = function(cy){
-    return cy - this.birthyear;
-}
+Details.prototype.retireAge = function (cy) {
+  return cy - this.birthyear;
+};

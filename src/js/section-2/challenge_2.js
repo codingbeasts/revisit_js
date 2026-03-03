@@ -1,22 +1,22 @@
 /*
-    Coding Challenge 2 
+    Coding Challenge 2
 
 John and Mike both play basketball in different teams. In the latest 3 games, John's team scored
 89,120 and 103 points, while Mike's team scored 116,94, and 123 points.
 
 1. Calculate the average score for each team.
-2. Decide which teams wins in average (highest average score), and print the winner to the 
+2. Decide which teams wins in average (highest average score), and print the winner to the
     console.
 3. Then change the score to show different winners don't forget to take into account there might
     be a draw (the same average score).
 4. Extra: Mary also plays basketball, and her team scored 97,134 and 105 points. Like before, log
     the average winner to the console.
 
-5. Like before, change the score to generate different winners, keeping in mind there might be a 
+5. Like before, change the score to generate different winners, keeping in mind there might be a
     draw.
    */
 
-console.info("\n\n\n\n\t\t\t\t\t Challenge 2");
+printTitle("Challenge 2");
 
 var average = function (item) {
   var sum = 0;
@@ -53,7 +53,7 @@ higher(average(johnTeam), average(mikeTeam)); //challenge 3
 maryTeam = [97, 134, 105];
 console.log("Mary Team's Average score : " + average(maryTeam));
 
-console.info("\n\n\n\nHigher of 3 teams");
+printHeading("Higher of 3 teams");
 
 function higher1(team1, team2, team3) {
   if (team1 > team2 && team1 > team3 && team2 !== team3) {
@@ -78,6 +78,13 @@ function higher1(team1, team2, team3) {
     console.log("Tie");
   }
 }
-higher1(average(johnTeam),average(mikeTeam), average(maryTeam));
+higher1(average(johnTeam), average(mikeTeam), average(maryTeam));
 
-console.log("John, Mike and Mary Team's Score "+average(johnTeam)+', '+average(mikeTeam)+' and '+average(maryTeam));
+console.log(
+  "John, Mike and Mary Team's Score " +
+    average(johnTeam) +
+    ", " +
+    average(mikeTeam) +
+    " and " +
+    average(maryTeam),
+);

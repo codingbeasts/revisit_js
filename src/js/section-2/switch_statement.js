@@ -1,10 +1,10 @@
-console.info("\n\n\n\n\t\t\t\t\t Switch Statement");
+printTitle("Switch Statement");
 
 // var job = prompt(
 //   "Enter your job positon from given below choice \n\t \
 //     teacher, driver, designer, instructor"
 // );
-job = 'teacher';
+job = "teacher";
 var result;
 
 switch (job) {

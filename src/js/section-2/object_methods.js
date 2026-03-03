@@ -1,6 +1,7 @@
-console.info("\n\n\n\n\t\t\t\tObject and Methods");
+printTitle("Object and Methods");
+
 dipanshu.calcAge = function (cy) {
-    dipanshu.age = cy - this.birthyear;
+  dipanshu.age = cy - this.birthyear;
 };
 
 dipanshu.calcAge(2023);

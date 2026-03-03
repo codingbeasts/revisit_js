@@ -1,4 +1,4 @@
-console.info("\n\n\n\n \t\t\t\t\t Operator Precedence");
+printTitle("Operator Precedence");
 
 var now = 2023;
 var yearDipanshu = 1997;
@@ -16,13 +16,12 @@ var averageAge = (ageDipanshu + ageJatin) / 2;
 
 console.log(averageAge);
 
-
 // multiple assignments
 
-var x,y;
-x = y = (3+5) * 4 - 6;
+var x, y;
+x = y = (3 + 5) * 4 - 6;
 
-console.log(x,y);
+console.log(x, y);
 
 x = x * 2;
 

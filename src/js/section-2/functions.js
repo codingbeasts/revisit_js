@@ -1,4 +1,4 @@
-console.info("\n\n\n\n\t\t\t\t\t Functions");
+printTitle("Functions");
 
 function calcAge(currentYear, birthYear) {
   return currentYear - birthYear;
@@ -14,7 +14,7 @@ console.log(
     " " +
     ageJatin +
     " " +
-    ageSiddhant
+    ageSiddhant,
 );
 
 function retirement(cyear, year, firstname) {
@@ -31,42 +31,36 @@ console.log(retirement(2024, 1998, "Lakshay"));
 console.log(retirement(2024, 1956, "Siddhant"));
 console.log(retirement(2024, 1997, "Jatin"));
 
+printTitle("Types of Functions in functional programming");
 
-console.info("\n\n\n\n\t\t\t\t\t Types of Functions in functional programming.");
-
-
-
-console.info("\n\n\t\tBasic function");
-function hello(name){
-    return `hi ${name}`;
+printHeading("Basic Functions");
+function hello(name) {
+  return `hi ${name}`;
 }
-console.log(hello('dipanshu'));
+console.log(hello("dipanshu"));
 
-
-console.info('\n\n\t\tFunction expression or Anonymous Function');
-const war = function(country_1,country_2){
-    return `${country_1} is doing war with ${country_2}`;
-}
-console.log(war('Pakistan','India'));
-
-console.info('\n\n\t\tArrow Function');
-const water = (country)=>{
-    return `${country} has stop it's water`;
+printHeading("Function expression or Anonymous Function");
+const war = function (country_1, country_2) {
+  return `${country_1} is doing war with ${country_2}`;
+};
+console.log(war("Pakistan", "India"));
+printHeading("Arrow Function");
+const water = (country) => {
+  return `${country} has stop it's water`;
 };
 
-console.log('India');
+console.log("India");
+printHeading("IIFE - Immediately Invoked Function Expression");
+(function (name) {
+  console.log("This is my surname " + name);
+})("Shora");
 
-console.info('\n\n\t\tIIFE - Immediately Invoked Function Expression');
-(function(name){console.log('This is my surname '+name)})('Shora');
-
-
-console.info('\n\n\t\tPure Function');
-function pureFun(year){
-    return new Date().getFullYear() - year;
+printHeading("Pure Function");
+function pureFun(year) {
+  return new Date().getFullYear() - year;
 }
-console.log('My Age is :',pureFun(1997));
-
-console.info('\t\t\t\t\t\tThis is generative function in js');
+console.log("My Age is :", pureFun(1997));
+printHeading("This is generative function in js");
 function* countToThree() {
   yield 1;
   yield 2;
@@ -79,4 +73,3 @@ console.log(counter.next()); // { value: 1, done: false }
 console.log(counter.next()); // { value: 2, done: false }
 console.log(counter.next()); // { value: 3, done: false }
 console.log(counter.next()); // { value: undefined, done: true }
-

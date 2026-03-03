@@ -1,21 +1,24 @@
-console.info("\n\n\n\n\n\t\t\t\tobject using constructor");
-/* const Person = function (name, year, job) {
-   this.name = name;
-   this.year = year;
-   this.job = job;
- };*/
-
-// class based constructor with function return as array
-class Person {
-  constructor(name, year, job) {
-    this.name = name;
-    this.year = year;
-    this.job = job;
-  }
-  showDetail() {
+printTitle("object using constructor");
+const Person = function (name, year, job) {
+  this.name = name;
+  this.year = year;
+  this.job = job;
+  this.showDetil = function () {
     return [this.name, this.year, this.job];
-  }
-}
+  };
+};
+
+// class based constructor with function return array
+// class Person {
+//   constructor(name, year, job) {
+//     this.name = name;
+//     this.year = year;
+//     this.job = job;
+//   }
+//   showDetail() {
+//     return [this.name, this.year, this.job];
+//   }
+// }
 
 const dipanshuShora = new Person("dipanshu", 1997, "Developer");
 

@@ -1,4 +1,4 @@
-console.info("\n\n\n\n\t\t\t\tChallenge 3");
+printTitle("Challenge 3");
 
 /*
 
@@ -10,7 +10,7 @@ calculator (as a function). He likes to tip 20% of the bill
 when the bill is less than $50, 15% when the bill is between
 $50 and $200, and 10% if the bill is more than $200.
 
-In the end, John would like to have 2 have arrays: 
+In the end, John would like to have 2 have arrays:
 1) Containing all three tips (one for each bill).
 2) Containing all three final paid amounts (bill + tip).
 

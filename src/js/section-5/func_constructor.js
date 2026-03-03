@@ -1,8 +1,6 @@
-console.info(
-  "\n\n\n\n\n \t\t\t\t\tSection 5 Advance Javascript objects and functions."
-);
+printTitle("Section 5 Advance Javascript objects and functions");
 
-console.info("\n\n\n\n\n\t\t\t\tConstructor using function");
+printHeading("Constructor using function");
 
 class Vehicle {
   constructor(type, wheels, fuel, modelYear) {
@@ -12,14 +10,14 @@ class Vehicle {
     this.modelYear = modelYear;
     this.currentYear = new Date().getFullYear();
   }
-    test(){
-        return 'Simple Test';
-    }
+  test() {
+    return "Simple Test";
+  }
 }
 
 const car = new Vehicle("Car", 4, ["Petrol", "Diesel"], 2014);
 const bike = new Vehicle("Bike", 2, "Petrol", 2015);
-const truck = new Vehicle('Truck',6,'Diesel',2020);
+const truck = new Vehicle("Truck", 6, "Diesel", 2020);
 
 console.log(car);
 console.log(bike);
@@ -34,14 +32,13 @@ Vehicle.prototype.age = function () {
 console.log(car.age());
 console.log(bike.age());
 
-console.log("hasOwnProperty : "+car.hasOwnProperty('age'));
-console.log("isPrototypeOf of car : "+ Vehicle.prototype.isPrototypeOf(car));
-console.log("isPrototypeOf of bike : "+ Vehicle.prototype.isPrototypeOf(bike));
-console.log("car instance of Vehicle : "+`${car instanceof Vehicle}`);
-console.log("bike instance of Vehicle : "+`${bike instanceof Vehicle}`);
-console.log("truck instance of Vehicle : "+`${truck instanceof Vehicle}`);
+console.log("hasOwnProperty : " + car.hasOwnProperty("age"));
+console.log("isPrototypeOf of car : " + Vehicle.prototype.isPrototypeOf(car));
+console.log("isPrototypeOf of bike : " + Vehicle.prototype.isPrototypeOf(bike));
+console.log("car instance of Vehicle : " + `${car instanceof Vehicle}`);
+console.log("bike instance of Vehicle : " + `${bike instanceof Vehicle}`);
+console.log("truck instance of Vehicle : " + `${truck instanceof Vehicle}`);
 console.log(Person);
-
 
 console.log(car.test());
 

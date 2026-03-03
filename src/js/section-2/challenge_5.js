@@ -1,4 +1,4 @@
-console.info("\n\n\n\n\t\t\t\t Challenge 5");
+printTitle("Challenge 5");
 
 /*
  *  Remember the tip calculator challenge 3? Let's create a more advanced version using everything
@@ -67,11 +67,11 @@ class Obj_bill {
 }
 
 const jatinP = new Obj_bill([124, 48, 268, 180, 42], jtip);
-console.log("Jatin Calculated Tip Amount : "+jatinP.calc_tip());
-console.log("Jatin Calculated Total Amount : "+jatinP.total_amt);
+console.log("Jatin Calculated Tip Amount : " + jatinP.calc_tip());
+console.log("Jatin Calculated Total Amount : " + jatinP.total_amt);
 const dipanshuP = new Obj_bill([77, 375, 110, 45], mtip);
-console.log("Dipanshu Calculated Tip Amount : "+dipanshuP.calc_tip());
-console.log("Dipanshu Calculated Total Amount : "+dipanshuP.total_amt);
+console.log("Dipanshu Calculated Tip Amount : " + dipanshuP.calc_tip());
+console.log("Dipanshu Calculated Total Amount : " + dipanshuP.total_amt);
 function jtip(el) {
   switch (true) {
     case el < 50:
@@ -104,11 +104,11 @@ function averageTips(tip) {
 
 if (averageTips(jatinP.calc_tip()) > averageTips(dipanshuP.calc_tip())) {
   console.log(
-    `Jatin has paid more tips than mark : ${averageTips(jatinP.calc_tip())}`
+    `Jatin has paid more tips than mark : ${averageTips(jatinP.calc_tip())}`,
   );
 } else if (averageTips(jatinP.calc_tip()) < averageTips(dipanshuP.calc_tip())) {
   console.log(
-    `Dipanshu has paid more tips than John : ${averageTips(dipanshuP.calc_tip())}`
+    `Dipanshu has paid more tips than John : ${averageTips(dipanshuP.calc_tip())}`,
   );
 } else {
   console.log(`Jatin and Dipanshu has paid same tip amount`);

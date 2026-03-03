@@ -1,4 +1,4 @@
-console.info("\n\n\n\n\t\t\t\tLoops and Iteration");
+printTitle("Loops and Iteration");
 
 var i;
 for (i = 0; i < year.length; i++) {
@@ -10,7 +10,7 @@ while (i < year.length) {
   console.log(year[i]);
   i++;
 }
-console.log("\n\n");
+console.log("\n\n\n");
 i = 0;
 do {
   console.log("printed using do while loop " + i);
@@ -20,7 +20,8 @@ do {
 var randomArray = new Array("john", "mike", 1994, 2, true, 23.6, "smith");
 
 console.log("\n\nprint randomArray : " + randomArray);
-console.info("\n\n\nPrinting random array using forEach loop");
+
+printHeading("Printing random array using forEach loop");
 
 randomArray.forEach(function (el) {
   console.log(el);

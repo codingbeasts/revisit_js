@@ -1,4 +1,4 @@
-console.info("\n\n\n\n\n\t\t\t\tclosures");
+printTitle("closures");
 function retire(year) {
   const age = "many years left for you";
   return function (name) {
@@ -11,7 +11,7 @@ const dipanshuRetire = retire(1995);
 
 console.log(dipanshuRetire("dipanshu"));
 
-console.info("\n\n\n\n\t\t\t\t");
+printHeading("Counter");
 function Counter(count) {
   this.increment = function () {
     return count++;
@@ -27,5 +27,3 @@ console.log(tenCount.increment());
 console.log(tenCount.increment());
 console.log(tenCount.increment());
 console.log(tenCount.increment());
-
-
