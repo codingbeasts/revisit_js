@@ -1,6 +1,5 @@
 /*[Section 4 Javascript DOM Manipulation and events.]*/
 
-printTitle("Section 5 Advanced Javascript: Object & Functions");
 printHeading("test file");
 
 var country = ["India", "Germany", "Crotia", "Japan"];

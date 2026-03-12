@@ -26,7 +26,6 @@ function retirement(cyear, year, firstname) {
 }
 
 console.log(retirement(2024, 1997, "Dipanshu"));
-
 console.log(retirement(2024, 1998, "Lakshay"));
 console.log(retirement(2024, 1956, "Siddhant"));
 console.log(retirement(2024, 1997, "Jatin"));
@@ -34,6 +33,7 @@ console.log(retirement(2024, 1997, "Jatin"));
 printTitle("Types of Functions in functional programming");
 
 printHeading("Basic Functions");
+
 function hello(name) {
   return `hi ${name}`;
 }
@@ -44,23 +44,28 @@ const war = function (country_1, country_2) {
   return `${country_1} is doing war with ${country_2}`;
 };
 console.log(war("Pakistan", "India"));
+
 printHeading("Arrow Function");
 const water = (country) => {
   return `${country} has stop it's water`;
 };
 
 console.log("India");
+
 printHeading("IIFE - Immediately Invoked Function Expression");
 (function (name) {
   console.log("This is my surname " + name);
 })("Shora");
 
 printHeading("Pure Function");
+
 function pureFun(year) {
   return new Date().getFullYear() - year;
 }
 console.log("My Age is :", pureFun(1997));
+
 printHeading("This is generative function in js");
+
 function* countToThree() {
   yield 1;
   yield 2;

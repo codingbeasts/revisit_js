@@ -42,7 +42,7 @@ console.log(Person);
 
 console.log(car.test());
 
-/*[making object with Constuctor fuunctions]*/
+/*[making object with Constuctor functions]*/
 
 /* function TestConstruct(test1, test2, test3){
      this.test1 = test1;
