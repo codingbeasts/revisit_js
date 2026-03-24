@@ -36,4 +36,4 @@ function outEvent() {
 }
 
 // button in index.html is commmented
-document.getElementById("clickyyy").addEventListener("click", outEvent());
+// document.getElementById("clickyyy").addEventListener("click", outEvent());
