@@ -1,4 +1,4 @@
-printHeading("High Order Function in js");
+printTitle("High Order Function in js");
 
 const genericObj = function (val, func) {
   const objReturn = [];
@@ -44,7 +44,7 @@ const periRect = genericObj(
   },
 );
 
-console.log("Area of Square : " + areaSquare);
-console.log("Perimeter of Square : " + periSquare);
-console.log("Area of Rectangle : " + areaRect);
-console.log("Perimeter of Rectangle : " + periRect);
+console.log("Area of Square : " , areaSquare);
+console.log("Perimeter of Square : " , periSquare);
+console.log("Area of Rectangle : " , areaRect);
+console.log("Perimeter of Rectangle : " , periRect);

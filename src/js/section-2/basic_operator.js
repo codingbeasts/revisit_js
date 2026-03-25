@@ -11,27 +11,27 @@ yearDipanshu = now - ageDipanshu;
 
 yearJatin = now - ageJatin;
 
-console.log(yearDipanshu);
-console.log(yearJatin);
+console.log("Dipanshu YoB = ", yearDipanshu);
+console.log("Jatin YoB = ", yearJatin);
 
 var l = 12;
 var b = 19;
 
 var s = 4;
 
-console.log("Area of Square : " + s * s);
-console.log("Area of Rectangle : " + l * b);
+console.log("Area of Square : ", s * s);
+console.log("Area of Rectangle : ", l * b);
 
-console.log("Perimeter of Rectangle : " + 2 * (l + b));
+console.log("Perimeter of Rectangle : ", 2 * (l + b));
 
-console.log("Length - Breadth : " + (l - b));
+console.log("Length - Breadth : ", l - b);
 
-console.log("Length / Breadth : " + l / b);
+console.log("Length / Breadth : ", l / b);
 
 var whoIsOlder = ageDipanshu > ageJatin;
 
 x = null;
-console.log(whoIsOlder);
+console.log("dipanshu is older than jatin ", whoIsOlder);
 
 printHeading("Use of typeof function in js : ");
 console.log(typeof ageDipanshu);

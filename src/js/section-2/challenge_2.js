@@ -29,8 +29,8 @@ var average = function (item) {
 var johnTeam = [89, 120, 103];
 var mikeTeam = [116, 94, 123];
 
-console.log("John Team's Average score : " + average(johnTeam));
-console.log("Mike Team's Average score : " + average(mikeTeam)); // step 1 completed;
+console.log("John Team's Average score : " , average(johnTeam));
+console.log("Mike Team's Average score : " , average(mikeTeam)); // step 1 completed;
 
 function higher(team1, team2) {
   if (team1 > team2) {
@@ -46,12 +46,12 @@ higher(average(johnTeam), average(mikeTeam));
 // johnTeam = [95, 128, 119];
 // mikeTeam = [110, 142, 90];
 
-console.log("John Team's Average score : " + average(johnTeam));
-console.log("Mike Team's Average score : " + average(mikeTeam)); // step 1 completed;
+console.log("John Team's Average score : " , average(johnTeam));
+console.log("Mike Team's Average score : " , average(mikeTeam)); // step 1 completed;
 higher(average(johnTeam), average(mikeTeam)); //challenge 3
 
 maryTeam = [97, 134, 105];
-console.log("Mary Team's Average score : " + average(maryTeam));
+console.log("Mary Team's Average score : " , average(maryTeam));
 
 printHeading("Higher of 3 teams");
 
@@ -81,10 +81,10 @@ function higher1(team1, team2, team3) {
 higher1(average(johnTeam), average(mikeTeam), average(maryTeam));
 
 console.log(
-  "John, Mike and Mary Team's Score " +
-    average(johnTeam) +
-    ", " +
-    average(mikeTeam) +
-    " and " +
+  "John, Mike and Mary Team's Score " ,
+    average(johnTeam) ,
+    ", " ,
+    average(mikeTeam) ,
+    " and " ,
     average(maryTeam),
 );

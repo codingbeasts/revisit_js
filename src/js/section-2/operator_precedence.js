@@ -6,7 +6,7 @@ var fullAge = 25;
 // multiple operator
 var isFullAge = now - yearDipanshu >= fullAge;
 
-console.log(isFullAge);
+console.log("Full age : " , isFullAge);
 // grouping
 var ageDipanshu = now - yearDipanshu;
 
@@ -14,15 +14,15 @@ var ageJatin = 26;
 
 var averageAge = (ageDipanshu + ageJatin) / 2;
 
-console.log(averageAge);
+console.log("Average Age : " , averageAge);
 
 // multiple assignments
 
 var x, y;
 x = y = (3 + 5) * 4 - 6;
 
-console.log(x, y);
+console.log("x - " , x, "y - " , y);
 
 x = x * 2;
 
-console.log(x);
+console.log("update x - " , x);

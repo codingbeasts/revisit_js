@@ -44,5 +44,5 @@ for (var i = 0; i < bill.length; i++) {
       console.log("no tips");
   }
 }
-console.log("John paid tips of : " + calc_tip);
-console.log("John paid total ammount with tip : " + total_amt);
+console.log("John paid tips of : " , calc_tip);
+console.log("John paid total ammount with tip : " , total_amt);

@@ -29,6 +29,8 @@ printHeading("Variable Mutation");
 
 age = "Twenty Five";
 job = "Web Developer";
+console.log("Value of age " , age);
+console.log("Value of job " , job);
 
 /*
 alert(
@@ -40,3 +42,51 @@ console.log(firstName+ ' '+ last);
 */
 
 printTitle("EXPLICIT Type Conversion");
+
+printHeading("--- String to Number ---");
+
+let strInt = "42";
+let strFloat = "3.14";
+let strInvalid = "Hello";
+
+console.log(Number(strInt)); // 42 (The clean way)
+console.log(parseInt(strInt)); // 42 (Good for integers)
+console.log(parseFloat(strFloat)); // 3.14 (Good for decimals)
+console.log(Number(strInvalid)); // NaN (Not a Number)
+console.log(+strInt); // 42 (Unary plus - the "shortcut")
+
+printHeading("--- Number/Boolean to String ---");
+
+let num = 100;
+let bool = true;
+
+console.log(String(num)); // "100"
+console.log(num.toString()); // "100"
+console.log(String(bool)); // "true"
+console.log(String(null)); // "null" (String() handles null/undefined safely)
+
+printHeading("--- To Boolean (Truthiness) ---");
+
+// Falsy values (convert to false)
+console.log(Boolean("")); // false
+console.log(Boolean(0)); // false
+console.log(Boolean(null)); // false
+console.log(Boolean(undefined)); // false
+
+// Truthy values (convert to true)
+console.log(Boolean("Hello")); // true
+console.log(Boolean(42)); // true
+console.log(Boolean([])); // true (Empty arrays are true!)
+console.log(Boolean({})); // true (Empty objects are true!)
+
+printHeading("--- Practical Calculation ---");
+
+let price = "19.99";
+let quantity = "5";
+
+/* Without conversion: "19.99" * "5" works because of coercion, 
+ BUT "19.99" + "5" would result in "19.995" (string concatenation).
+ Always convert to be safe:
+*/
+let total = Number(price) * Number(quantity);
+console.log("Total Price: $" + total.toFixed(2));

@@ -10,7 +10,7 @@ function calculateAge(year) {
 // retirement(1997); // arrow function and function expression,anonymous function doesn't support hoisting
 
 var retirement = function (year) {
-  console.log("Year left in retirement : " + (65 - (2025 - year)));
+  console.log("Year left in retirement : " , (65 - (2025 - year)));
 };
 retirement(1997);
 

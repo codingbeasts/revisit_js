@@ -44,5 +44,5 @@ FMCG.prototype.companyAge = function () {
 };
 console.log("Current Year : ", new Date().getFullYear());
 
-console.log(`${cocola.name} is ` + cocola.companyAge() + " years old.");
-console.log(`${pepsi.name} is ` + pepsi.companyAge() + " years old.");
+console.log(`${cocola.name} is ` , cocola.companyAge() , " years old.");
+console.log(`${pepsi.name} is ` , pepsi.companyAge() , " years old.");

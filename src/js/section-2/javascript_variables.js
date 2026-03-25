@@ -4,17 +4,17 @@ var firstName = "dipanshu";
 var lastName = "shora";
 
 // print first name and last name in console
-console.log(firstName);
+console.log("First name : ", firstName);
 
-console.log(lastName);
+console.log("lastname : ", lastName);
 
 var age = 25;
 
 // checking age of person whether is he old or not
 if (age >= 25) {
-  console.log("quite old enough");
+  console.log("\nquite old enough");
 } else {
-  console.log("not old enough");
+  console.log("\nnot old enough");
 }
 
 /*[Overwriting variable using let and var]*/
@@ -22,25 +22,25 @@ if (age >= 25) {
 let cum = 2;
 var cumming = 4;
 var cumming = 5;
-console.log(cum, cumming);
+console.log("\ncum : ", cum, "cumming : ", cumming);
 
 /*[checking undefined vs not defined]*/
 let apple;
 // if removed the declaration the console statement says not defined reference error
 // but with declaration it say undefined if not initialised
 apple = "apple";
-console.log(apple);
+console.log("\napple : ", apple);
 
 var fullAge = true;
 // checking boolean age in if else if condition
 if (fullAge === true && age > 25) {
-  console.log("Mature");
+  console.log("\nMature");
 } else if (fullAge === true && age < 25) {
-  console.log("Not Mature");
+  console.log("\nNot Mature");
 } else if (fullAge === true && age === 25) {
-  console.log("25 yrs old");
+  console.log("\n25 yrs old");
 } else {
-  console.log("nothing");
+  console.log("\nnothing");
 }
 
 // checking person age and boolean in switch statement
@@ -58,14 +58,11 @@ switch (true) {
     console.log("no you aren't mature");
 }
 
+printHeading("typeof in js");
 var job;
 
 job = "programmer";
 
-console.log("type of fullage : " + typeof fullAge);
-console.log("type of age : " + typeof age);
-
-console.log("Job : " + typeof job);
-
-job = "developer";
-console.log(job);
+console.log("type of fullage : ", typeof fullAge);
+console.log("type of age : ", typeof age);
+console.log("Job : ", typeof job);

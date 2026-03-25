@@ -67,11 +67,11 @@ class Obj_bill {
 }
 
 const jatinP = new Obj_bill([124, 48, 268, 180, 42], jtip);
-console.log("Jatin Calculated Tip Amount : " + jatinP.calc_tip());
-console.log("Jatin Calculated Total Amount : " + jatinP.total_amt);
+console.log("Jatin Calculated Tip Amount : " , jatinP.calc_tip());
+console.log("Jatin Calculated Total Amount : " , jatinP.total_amt);
 const dipanshuP = new Obj_bill([77, 375, 110, 45], mtip);
-console.log("Dipanshu Calculated Tip Amount : " + dipanshuP.calc_tip());
-console.log("Dipanshu Calculated Total Amount : " + dipanshuP.total_amt);
+console.log("Dipanshu Calculated Tip Amount : " , dipanshuP.calc_tip());
+console.log("Dipanshu Calculated Total Amount : " , dipanshuP.total_amt);
 function jtip(el) {
   switch (true) {
     case el < 50:

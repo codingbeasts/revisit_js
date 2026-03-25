@@ -29,7 +29,7 @@ console.log(`Name : ${jatin.firstName}`);
   jatin.job = "Majdoori";
 })(); //iife
 console.log(`Job : ${jatin.job}`);
-console.log("\n\n"+jatin);
+console.log("\n\n", jatin);
 
 // create object using new Object() function
 const dipanshu = new Object();
