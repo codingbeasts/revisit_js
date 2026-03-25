@@ -32,12 +32,12 @@ Vehicle.prototype.age = function () {
 console.log(car.age());
 console.log(bike.age());
 
-console.log("hasOwnProperty : " + car.hasOwnProperty("age"));
-console.log("isPrototypeOf of car : " + Vehicle.prototype.isPrototypeOf(car));
-console.log("isPrototypeOf of bike : " + Vehicle.prototype.isPrototypeOf(bike));
-console.log("car instance of Vehicle : " + `${car instanceof Vehicle}`);
-console.log("bike instance of Vehicle : " + `${bike instanceof Vehicle}`);
-console.log("truck instance of Vehicle : " + `${truck instanceof Vehicle}`);
+console.log("hasOwnProperty : " , car.hasOwnProperty("age"));
+console.log("isPrototypeOf of car : " , Vehicle.prototype.isPrototypeOf(car));
+console.log("isPrototypeOf of bike : " , Vehicle.prototype.isPrototypeOf(bike));
+console.log("car instance of Vehicle : " , `${car instanceof Vehicle}`);
+console.log("bike instance of Vehicle : " , `${bike instanceof Vehicle}`);
+console.log("truck instance of Vehicle : " , `${truck instanceof Vehicle}`);
 console.log(Person);
 
 console.log(car.test());

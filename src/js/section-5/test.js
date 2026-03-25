@@ -106,10 +106,10 @@ if (true) {
   /* let al = 20; // let and const inside locked scope act as new variable
   but not var
   that's why we use this let and const in loops and first class functions */
-  console.log("Output from Inside if-statement " + al);
+  console.log("Output from Inside if-statement " , al);
 }
 
-console.log("Output from Outside if-statemeent " + al);
+console.log("Output from Outside if-statemeent " , al);
 printHeading("var doesn't respect block scoped");
 
 /* const al = 10;
