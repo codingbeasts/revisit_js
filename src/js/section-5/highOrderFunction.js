@@ -19,9 +19,7 @@ const areaSquare = genericObj(
     return s1 * s2;
   },
 );
-const periSquare = genericObj([4, 5, 6], (e) => {
-  return 4 * e;
-});
+const periSquare = genericObj([4, 5, 6], (e) => 4 * e);
 
 const areaRect = genericObj(
   [
