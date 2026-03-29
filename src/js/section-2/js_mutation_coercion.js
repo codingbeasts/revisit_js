@@ -49,21 +49,21 @@ let strInt = "42";
 let strFloat = "3.14";
 let strInvalid = "Hello";
 
-console.log(Number(strInt)); // 42 (The clean way)
-console.log(parseInt(strInt)); // 42 (Good for integers)
-console.log(parseFloat(strFloat)); // 3.14 (Good for decimals)
-console.log(Number(strInvalid)); // NaN (Not a Number)
-console.log(+strInt); // 42 (Unary plus - the "shortcut")
+console.log('String to Int using Number()',Number(strInt)); // 42 (The clean way)
+console.log('String to Int using parseInt()',parseInt(strInt)); // 42 (Good for integers)
+console.log('String to Float using parseFloat()',parseFloat(strFloat)); // 3.14 (Good for decimals)
+console.log('NaN to Number',Number(strInvalid)); // NaN (Not a Number)
+console.log('String to Int using Unary+',+strInt); // 42 (Unary plus - the "shortcut")
 
 printHeading("--- Number/Boolean to String ---");
 
 let num = 100;
 let bool = true;
 
-console.log(String(num)); // "100"
-console.log(num.toString()); // "100"
-console.log(String(bool)); // "true"
-console.log(String(null)); // "null" (String() handles null/undefined safely)
+console.log('Num to string using String()',String(num)); // "100"
+console.log('Num to string using .toString()',num.toString()); // "100"
+console.log('Boolean to string',String(bool)); // "true"
+console.log('Null to string',String(null)); // "null" (String() handles null/undefined safely)
 
 printHeading("--- To Boolean (Truthiness) ---");
 
