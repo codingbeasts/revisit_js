@@ -91,7 +91,6 @@ console.log(
 );
 
 /*[Checking value with if statement and after statement]*/
-
 /* var al = 10;
  if(true){
      var al = 20;
@@ -110,6 +109,7 @@ if (true) {
 }
 
 console.log("Output from Outside if-statemeent " , al);
+
 printHeading("var doesn't respect block scoped");
 
 /* const al = 10;
