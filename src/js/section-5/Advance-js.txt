@@ -1,0 +1,79 @@
+Part 1: The Execution Context & Variables
+
+    How JavaScript Works: Execution Context and Call Stack.
+
+    Hoisting in JavaScript: How variables and functions are moved to the top.
+
+    The Window & Global Object: Understanding this at the global level.
+
+    Undefined vs Not Defined: Understanding the initial state of variables.
+
+    The Scope Chain: Lexical Environment and how JS looks up variables.
+
+    Let & Const vs Var: Differences in declaration and the Temporal Dead Zone.
+
+    Block Scope & Shadowing: How curly braces {} affect variable visibility.
+
+Part 2: Functional Mastery
+
+    Closures: How functions remember their lexical scope.
+
+    Interview Questions on Closures: Practical logic problems.
+
+    Function Statements & Expressions: Understanding the different ways to define functions.
+
+    First-Class Functions: Passing functions as arguments and returning them.
+
+    Arrow Functions: Syntax and the lexical this binding.
+
+    Anonymous Functions: Use cases in callbacks.
+
+Part 3: Asynchronous JS & The Browser
+
+    Callback Functions: The foundation of asynchronous programming.
+
+    Event Loop: How the Call Stack, Web APIs, and Callback Queue interact.
+
+    Microtask Queue: Why Promises have higher priority than timeouts.
+
+    JS Engine Architecture: How V8 or SpiderMonkey parses and executes code.
+
+    SetTimeout & Trust Issues: Why timers are not always accurate.
+
+Part 4: Objects, Prototypes, and "this"
+
+    Call, Apply, and Bind: Methods to explicitly set the this context.
+
+    Prototypes & Prototypal Inheritance: How objects inherit properties in JS.
+
+    The Prototype Chain: Deep dive into __proto__ and Object.prototype.
+
+    Polyfills: Writing your own versions of built-in methods (e.g., Polyfill for bind).
+
+Part 5: Modern ES6+ & Data Handling
+
+    Higher-Order Functions: Map, Filter, and Reduce.
+
+    Map vs Foreach: Understanding performance and return values.
+
+    Reduce Deep Dive: Handling complex data transformations.
+
+    Destructuring: Efficiently extracting data from Arrays and Objects.
+
+    Spread vs Rest Operators: The different behaviors of ....
+
+Part 6: Advanced Logic & Performance
+
+    Promises: Handling Resolve and Reject states.
+
+    Async / Await: Modern syntax for handling asynchronous operations.
+
+    Promise APIs: Promise.all, allSettled, race, and any.
+
+    Debouncing: Optimizing performance for events like window resizing or search bars.
+
+    Throttling: Limiting the rate at which a function can fire.
+
+    Currying: Transforming a function with multiple arguments into a series of functions.
+
+    Memoization: Caching results to optimize expensive function calls.
